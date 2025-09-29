@@ -11,10 +11,11 @@ This project demonstrates the use of [Piper](https://github.com/OHF-Voice/piper1
 Whisper is a model that was trained on labelled data for automatic speech recognition (ASR) and speech translation. 
 Whisper was proposed in the paper [Robust Speech Recognition via Large-Scale Weak Supervision](https://arxiv.org/abs/2212.04356) by Alec Radford et al from OpenAI.
 
-elow are samples for Piper, a fast and local text to speech system. Samples were generated from the first paragraph of the Wikipedia entry for rainbow.
+Piper language models are efficient, fully local neural Text-to-Speech (TTS) models designed for fast and high-quality voice generation. 
 
-Piper languge models are fast and local neural text-to-speech models. The engine is using espeak-ng synthesizer for phonemization.
+The Piper engine uses the espeak-ng synthesizer for phonemization, which converts text into phonemes before they are processed by the neural model. This approach ensures accurate pronunciation across multiple languages while maintaining low latency, making Piper suitable for real-time applications and offline use.
 
+![Demo Scene](Documentation/images/the-demo-scene.png "The demo scene")
 
 ## Key Features
 
@@ -66,7 +67,6 @@ Steps 3 and 4 are only required if the models are not automatically linked to th
 1. Open the `/Assets/Scenes/Runtime AI Sample Scene.unity` scene in the Unity Editor.
 2. Run the scene to see test the Speech-To-Text conversion and Text-To-Speech synthesis
 
-![Demo Scene](Documentation/images/the-demo-scene.png "The demo scene")
 
 ## How to Use
 
@@ -81,6 +81,10 @@ You can also type text directly into the field to test the Piper model speech sy
 Speech-to-Text and Text-to-Speech function independently, but in this demo they are combined to showcase the full round trip.
 
 The espeak-ng synthesizer plugin supports Android, Windows, and macOS (x64) out of the box. For other platforms, please refer to the espeak-ng repository.
+
+Try yourself:
+
+[![Try the demo](https://img.youtube.com/vi/31LuZegvZHw/0.jpg)](https://www.youtube.com/watch?v=wT0hd4ii0xc)
 
 ## License
 
